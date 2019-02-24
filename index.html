@@ -6,18 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <header>
         <div class="header-layer-wrapper">
             <div class="header-layer-1"></div>
             <div class="header-layer-2"></div>
-        </div>        
+        </div>
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+                <div class="wrapper nav-wrapper">
+                    <a class="navbar-brand" href="#">
+                        <i class="fas fa-leaf"></i>
+                        Nature
+                    </a>                    
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacts">Contacts</a>
+                            </li>  
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                            <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>   
     </header>
-
+    <section id="about"></section>
+    <section id="projects"></section>
+    <section id="contacts"></section>
+    
 
       <script src="node_modules/jquery/dist/jquery.min.js"></script>
       <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

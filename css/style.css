@@ -1,5 +1,5 @@
 body {
-    min-height: 400vh;
+    min-height: 100vh;
 }
 
 header {
@@ -9,6 +9,17 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;    
+}
+
+.nav-wrapper {
+    justify-content: space-between;
 }
 
 .header-layer-wrapper {
@@ -32,9 +43,13 @@ header {
 
 .header-layer-1{
     z-index: 2;
-    background-image: url('../img/header-layer-1.png')
+    background-image: url('../img/header-layer-1.png');
 }
 
 .header-layer-2{
-    background-image: url('../img/header-layer-2.png')
+    background-image: url('../img/header-layer-2.png');
+}
+
+section {
+    min-height: 100vh;
 }
