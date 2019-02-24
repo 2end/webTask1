@@ -1,0 +1,40 @@
+body {
+    min-height: 400vh;
+}
+
+header {
+    height: 100vh;
+    background-image: url('../img/header.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header-layer-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.header-layer-1, .header-layer-2{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 1;
+    transition: all 0.3s linear;
+}
+
+.header-layer-1{
+    z-index: 2;
+    background-image: url('../img/header-layer-1.png')
+}
+
+.header-layer-2{
+    background-image: url('../img/header-layer-2.png')
+}
