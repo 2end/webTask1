@@ -50,6 +50,29 @@ header {
     background-image: url('../img/header-layer-2.png');
 }
 
+.header-title {
+    position: absolute;
+	bottom: 150px;
+    right: 200px;
+    transition: all 0.3s linear;
+}
+
 section {
     min-height: 100vh;
 }
+
+@media screen and (max-width: 992px) {
+    .header-title {
+        bottom: 50px;
+        right: 80px;
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header-title {
+        bottom: 20px;
+        right: 40px;
+        font-size: 24px;
+    }
+  }
