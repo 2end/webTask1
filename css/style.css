@@ -1,25 +1,47 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    min-height: 100vh;
+    min-height: 500vh;
 }
 
 header {
     height: 100vh;
-    background-image: url('../img/header.jpeg');
+    background-image: url('../img/header.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 
+h1 {
+    text-transform: uppercase;
+}
+
+.highlight {
+    color: purple;
+    font-weight: bold;
+}
+
+.container, .navbar {
+    padding: 0;
+    margin: 0;
+    max-width: initial;
+}
+
 .wrapper {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    display: flex;    
+    display: flex;
+    padding: 0 16px;   
 }
 
 .nav-wrapper {
     justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .header-layer-wrapper {
@@ -57,15 +79,86 @@ header {
     transition: all 0.3s linear;
 }
 
-section {
-    min-height: 100vh;
+#about {
+    min-height: 40vh;
 }
 
-@media screen and (max-width: 992px) {
+.about-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 40vh;
+}
+
+.about-title, .about-text {
+    text-align: center;
+}
+
+.about-title {
+    width: 100%;
+}
+
+.about-text {
+    padding-top: 20px;
+    width: 80%;
+}
+
+#projects {
+    padding-top: 80px;
+}
+
+#projects .row {
+    height: 50vh;
+}
+
+.projects-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-left: 8px solid purple;
+}
+
+.projects-photo {
+    height: 100%;
+}
+
+#projects .row:nth-child(1) .projects-photo {
+    background-image: url('../img/projects-butterflies.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.projects-content-text {
+    padding-top: 30px;
+    text-align: left;
+    color: grey;
+}
+
+@media screen and (max-width: 991px) {
     .header-title {
         bottom: 50px;
         right: 80px;
         font-size: 36px;
+    }
+
+    .about-wrapper {
+        align-items: flex-start;
+        border-left: 8px solid purple;
+    }
+
+    .about-text {
+        width: 100%;
+        text-align: left;
+    }
+    
+    .about-title {
+        text-align: left;
+    }
+
+    .projects-content-title {
+        padding-top: 20px;
     }
 }
 

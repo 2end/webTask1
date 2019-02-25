@@ -9,6 +9,7 @@
   "author": "Roman",
   "license": "ISC",
   "dependencies": {
+    "aos": "^2.3.4",
     "bootstrap": "^4.3.1",
     "jquery": "^3.3.1"
   },

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -45,13 +46,48 @@
             </div>
         </nav>
     </header>
-    <section id="about"></section>
-    <section id="projects"></section>
+    <section id="about" data-aos="fade-down">
+        <div class="wrapper about-wrapper">
+            <h1 class="about-title">
+                Discover nature
+            </h1>
+            <p class="about-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum nemo nihil 
+                numquam earum sunt suscipit nisi minus nostrum possimus quisquam, mollitia esse 
+                inventore, ratione, adipisci corporis cum pariatur. Officia, et?
+                Lorem, <span class="highlight">ipsum dolor sit amet consectetur adipisicing</span> elit. Optio, alias pariatur?
+                Saepe aperiam nihil, veniam magni pariatur mollitia nisi est ullam aut cupiditate 
+                adipisci perferendis fugit, atque asperiores nesciunt ea.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, numquam,
+                maxime minima <span class="highlight">unde repellendus maiores velit dolor blanditiis praesentium</span> iusto
+                tempora nihil quod quo? Excepturi beatae similique dolores et asperiores.
+            </p>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="wrapper">
+            <div class="container">
+                <div class="row projects-row align-items-center">
+                    <div class="col-12 col-lg-8 projects-photo" data-aos="fade-right"></div>
+                    <div class="col-12 col-lg-4 projects-content">
+                        <h1 class="projects-content-title">
+                            Butterflies
+                        </h1>
+                        <p class="projects-content-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quo nemo recusandae explicabo
+                             laborum magni omnis vero asperiores voluptatum quam doloremque, veniam error ipsam totam placeat
+                             corrupti aspernatur, ratione enim?                            
+                        </p>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
     <section id="contacts"></section>
-
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/aos/dist/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
 
