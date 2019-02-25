@@ -4,6 +4,7 @@ html {
 
 body {
     min-height: 500vh;
+    overflow-x: hidden;
 }
 
 header {
@@ -109,7 +110,7 @@ h1 {
 }
 
 #projects .row {
-    height: 50vh;
+    min-height: 50vh;
 }
 
 .projects-content {
@@ -121,13 +122,35 @@ h1 {
 }
 
 .projects-photo {
-    height: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#projects .row:nth-child(1) {
+    margin-bottom: 40px;
+}
+
+#projects .row:nth-child(2), 
+#projects .row:nth-child(3) {
+    background-color: black;
+}
+
+#projects .row:nth-child(2) .projects-content-title, 
+#projects .row:nth-child(3) .projects-content-title {
+    color: white;
 }
 
 #projects .row:nth-child(1) .projects-photo {
     background-image: url('../img/projects-butterflies.jpg');
-    background-size: cover;
-    background-position: center;
+}
+
+#projects .row:nth-child(2) .projects-photo {
+    background-image: url('../img/projects-lion.jpg');
+}
+
+#projects .row:nth-child(3) .projects-photo {
+    background-image: url('../img/projects-puppy.jpg');
 }
 
 .projects-content-text {
@@ -159,6 +182,18 @@ h1 {
 
     .projects-content-title {
         padding-top: 20px;
+    }
+
+    #projects .row:nth-child(2) {
+        margin-bottom: 40px;
+    }
+
+    #projects .row:nth-child(3) .projects-content {
+        order: 1;
+    }
+
+    #projects .row:nth-child(3) .projects-photo {
+        order: 0;
     }
 }
 
